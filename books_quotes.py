@@ -362,6 +362,7 @@ class App():
             if choice == 2:
                 self.All_Books.load_all_quotes()
             if choice == 3:
+                # load books again make data consistence between several instances of the app running.
                 self.All_Books.load_books()
                 self.All_Books.display_books_list()
             if choice == 4:
